@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About us</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    
+    header img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    header nav {
+      display: none;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      header a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.2s;
+      }
+      
+      header a:hover {
+        color: #aaa;
+      }
+    }
+    
+    /* Banner styles */
+    .banner {
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .banner h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .banner p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    /* NFT styles */
+    .nft {
+      background-color: white;
+      border: 1px solid black;
+      padding: 20px;
+      margin: 20px;
+    }
+    
+    .nft img {
+   max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    }
+    
+    .nft h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .nft p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .nft a {
+        background-color: #a68f60;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .nft a:hover {
+      background-color: #555;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.JPG" alt=""/> 
+    <div class="logo">About us</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <a href="gallery.html">NFTs</a>
+    </nav>
+  </header>
+  
+  <section class="banner">
+    <h2>Welcome to our NFT website</h2>
+    <p>Discover amazing NFTs from talented artists</p>
+  </section>
+
+  <section class="nft">
+    <img src="images/4.gif" alt="NFT Image">
+    <h3>NFT Title</h3>
+    <p>
+        42 years ago, the world was engulfed in flames and smoke, caused by these mysterious monsters that came from the tunnels that connect another
+         dimension to earth, these tunnels are called the "Black Wave" which suddenly started appearing all over the world. Just in
+          a couple of weeks" Billions of people died " and many countries were obliterated. Humans including the military tried all 
+          the technological.....</p>
+    
+  </section>
+
+  <section class="nft">
+    <img src="images/ezgif-5-b9a48cb026.gif" alt="NFT Image">
+    <h3>NFT Title</h3>
+    <p>means possible but can only hold out against the lower classes of these creatures. However, when the end of humanity was near,
+         people with unusual abilities started to appear among the last remaining humans, they are called " Skull Holders "
+          and with that, human counterattack began.  Skull holders are ranked by their strengths.
+          Starting from the highest 🆙  rank " X rank,  SS rank, S rank, " to the lowest rank " E Rank "
+
+    </p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 SKULL HOLDERS. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.nav-toggle').click(function(){
+        $('body').toggleClass('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
